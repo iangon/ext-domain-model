@@ -192,9 +192,9 @@ open class Family {
         for member in members {
             if member._job != nil {
                 switch member._job!.type {
-                case .Hourly(let hourly):
+                case .Hourly( _):
                         total += member.job!.calculateIncome(2000)
-                case .Salary(let salary):
+                case .Salary( _):
                         total += member.job!.calculateIncome(2000)
                 }
             }
