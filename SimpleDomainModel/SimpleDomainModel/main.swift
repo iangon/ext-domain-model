@@ -26,6 +26,11 @@ open class TestMe {
 public struct Money {
     public var amount : Int
     public var currency : String
+    
+    public init (amount: Int, currency: String) {
+        self.amount = amount
+        self.currency = currency
+    }
  
     public func convert(_ to: String) -> Money {
         let conversion = (self.currency, to)
